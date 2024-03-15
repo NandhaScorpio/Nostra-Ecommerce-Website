@@ -6,7 +6,7 @@
 }
 
 .delete-tag {
-    color: #D5E1E1;
+    color: #E2E1E1;
     display: flex;
     background-color: #18191D;
     justify-content: center;
@@ -14,13 +14,13 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
     position: relative;
     top: 0;
 }
 
 .text {
+    margin-top: 5px;
+    margin-bottom: 5px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -46,8 +46,43 @@
     z-index: 2;
 }
 
-ul,
-li {
+.side-navbar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 59vw;
+    background-color: #1D232C;
+    left: -60%;
+    transition: 1s;
+}
+
+.faaaa{
+    position: relative;
+}
+
+.faaaa i{
+    position: absolute;
+    right: 25px;
+    padding-top: 25px;
+    color: #E2E1E1;
+}
+
+.side-navbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.side-navbar ul li a{
+    color: #E2E1E1;
+    padding: 30px;
+    font-size: larger;
+}
+
+.list ul,
+.list ul li {
     display: inline;
     padding-left: 50px;
 }
@@ -161,11 +196,10 @@ li a:hover {
 
 .service {
     padding: 15px;
-    transition: 5s;
     animation-name: scroll;
 }
 
-.service:visited{
+.service:visited {
     display: block;
 }
 
@@ -216,7 +250,6 @@ li a:hover {
 }
 
 .new-arrivals {
-    transition: 5s;
     scroll-behavior: smooth;
 }
 
@@ -247,26 +280,23 @@ li a:hover {
 
 #new-arrivals {
     scroll-behavior: auto;
-    scroll-behavior: smooth;
-    transition: 5s;
 }
 
 #home {
     scroll-behavior: auto;
     scroll-behavior: smooth;
-    transition: 5s;
 }
 
-.most-wanted h1{
+.most-wanted h1 {
     font-weight: 700;
     padding: 20px;
 }
 
-.most-wanted-data{
+.most-wanted-data {
     position: relative;
 }
 
-.most-wanted-data p{
+.most-wanted-data p {
     font-size: 2vw;
     background-color: red;
     color: white;
@@ -278,28 +308,30 @@ li a:hover {
     left: 2%;
 }
 
-.fa{
+.fa {
     position: relative;
 }
 
-.most-wanted-data i,.imagepng{
+.most-wanted-data i,
+.imagepng {
     font-size: 3vw;
     border-radius: 10%;
     padding-left: 10px;
     padding-right: 10px;
     position: absolute;
     bottom: 0;
-    right: 2%;
+    right: 15px;
 }
 
-.most-wanted-data,.most-wanted-container{
+.most-wanted-data,
+.most-wanted-container {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.limited-offer{
+.limited-offer {
     display: flex;
     background-color: #1D232C;
     justify-content: center;
@@ -312,19 +344,19 @@ li a:hover {
     margin-right: 15px;
 }
 
-.limited-offer-content h2{
+.limited-offer-content h2 {
     font-size: 3vw;
     color: #E2E1E1;
     font-weight: 700;
 }
 
-.limited-offer-content p{
+.limited-offer-content p {
     font-size: 2vw;
     color: #E2E1E1;
     font-weight: 700;
 }
 
-.limited-offer-content button{
+.limited-offer-content button {
     position: absolute;
     padding: 10px;
     border-radius: 10px;
@@ -335,28 +367,28 @@ li a:hover {
     font-size: 15px;
 }
 
-.news-letter{
+.news-letter {
     text-align: center;
     padding-top: 40px;
 }
 
-.news-letter h1{
+.news-letter h1 {
     font-size: 3vw;
     font-weight: 700;
 }
 
-.news-letter p{
+.news-letter p {
     font-size: 2vw;
 }
 
-.news-letter input{
+.news-letter input {
     border: 3px solid #1D232C;
     width: 80%;
     height: 2.5vw;
     margin-top: 10px;
 }
 
-.news-letter button{
+.news-letter button {
     padding: 11px;
     font-size: 20px;
     border-radius: 10px;
@@ -368,25 +400,26 @@ li a:hover {
     margin-top: 10px;
 }
 
-footer{
+footer {
     background-color: #1D232C;
     margin-top: 35px;
     padding: 30px;
 }
 
-footer h1{
+footer h1 {
     font-size: 3vw;
     font-weight: 700;
     color: #E2E1E1;
 }
 
-footer p,footer b{
+footer p,
+footer b {
     font-size: 2vw;
     color: #E2E1E1;
     padding-right: 10px;
 }
 
-.social-media{
+.social-media {
     padding-top: 15px;
     padding-left: 40px;
     display: flex;
@@ -394,19 +427,36 @@ footer p,footer b{
     padding-bottom: 20px;
 }
 
-.social-media i{
+.social-media i {
     font-size: 2.1vw;
     font-weight: 400;
     color: #ffffff;
 }
 
-footer b{
+footer b {
     padding-top: 25px;
 }
 
 @media screen and (max-width:600px) {
-    .text{
-        font-size: 5px !important;
-        padding: -10px !important;
+    .delete-tag {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
+
+    .text {
+        font-size: 5px !important;
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .faa i {
+        font-size: 10px !important;
+        padding: 0;
+    }
+
+    .faa i:active .delete-tag{
+        display: none;
+    }
+
 }

@@ -9,6 +9,18 @@ var i1 = document.querySelector(".i1")
 var i2 = document.querySelector(".i2")
 var i3 = document.querySelector(".i3")
 
+var sideNav = document.querySelector(".side-navbar")
+var xMark = document.querySelector("#xMark")
+var menuBar = document.getElementById("menubar")
+
+menuBar.addEventListener("click", function () {
+    sideNav.style.left = "0"
+})
+
+xMark.addEventListener("click" , function() {
+    sideNav.style.left = "-60%"
+})
+
 var likebuttons = document.querySelectorAll(".imagepng")
 
 likebuttons.forEach((btn)=>{
