@@ -17,23 +17,29 @@ menuBar.addEventListener("click", function () {
     sideNav.style.left = "0"
 })
 
-xMark.addEventListener("click" , function() {
+xMark.addEventListener("click", function () {
     sideNav.style.left = "-60%"
 })
 
 var likebuttons = document.querySelectorAll(".imagepng")
 
-likebuttons.forEach((btn)=>{
-    btn.addEventListener("click",function(e){
-        
-        
-        if(e.target.src.indexOf("blackheart")>0)
-        {
+likebuttons.forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+
+
+        if (e.target.src.indexOf("blackheart") > 0) {
             console.log("jkjk");
-            e.target.src="img/redheart.png"
+            e.target.src = "img/redheart.png"
         }
-        else{
-            e.target.src="img/blackheart.png"
+        else {
+            e.target.src = "img/blackheart.png"
         }
     })
 })
+
+var imageCont = document.getElementById("slide-bar-container")
+function handleClick(direction) {
+    imageCont.scrollLeft = direction === 'right' ? imageCont.scrollLeft + "100vw" : imageCont.scrollLeft - "100vw";
+}
+
+console.log(imageCont)

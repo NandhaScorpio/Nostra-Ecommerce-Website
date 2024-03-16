@@ -101,29 +101,40 @@ li a:hover {
 }
 
 #i {
-    font-size: 137px;
+    font-size: 137px !important;
     color: white;
     position: absolute;
-    left: 100px;
+    left: 90px;
+    top: 280px;
 
 }
 
 #ei {
-    font-size: 137px;
+    font-size: 137px !important;
     color: white;
     position: absolute;
-    right: 100px;
+    right: 90px;
+    top: 280px;
 }
 
-.slide-bar {
+.slide-bar{
     display: flex;
-    justify-content: center;
+    overflow: scroll;
     align-items: center;
-    position: relative;
+}
+
+#slide-bar-container{
+    display: flex;
+}
+
+#slide-bar-container img{
+    width: 100vw;
 }
 
 .slide-bar-content {
     position: absolute;
+    display: flex;
+    padding-left: 18%;
 }
 
 .slide-ba {

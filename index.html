@@ -64,13 +64,17 @@
 
     <header class="header" id="home">
         <section class="slide-bar">
-            <img src="./img/slider-one.jpg" alt="slider-one" width="95%" class="i1" style="border-radius: 5px;">
-            <img src="./img/slider-one.jpg" alt="slider-one" width="95%" class="i2" style="display: none;"
-                style="border-radius: 20px;">
-            <img src="./img/slider-one.jpg" alt="slider-one" width="95%" class="i3" style="display: none;"
-                style="border-radius: 20px;">
-            <i class="fa-solid fa-angle-left" id="i"></i>
-            <i class="fa-solid fa-angle-right" id="ei"></i>
+            <div id="slide-bar-container">
+                <img src="./img/slider-one.jpg" alt="slider-one" width="1000vw" class="i1" style="border-radius: 5px;">
+                <img src="./img/slider-one.jpg" alt="slider-one" width="1000vw" class="i2" style="border-radius: 5px;">
+                <img src="./img/slider-one.jpg" alt="slider-one" width="1000vw" class="i3" style="border-radius: 5px;">
+            </div>
+
+            <div class="faaaaa">
+                <i class="fa-solid fa-angle-left" id="i" onclick="handleclick(`left`)"></i>
+                <i class="fa-solid fa-angle-right" id="ei" onclick="handleclick(`right`)"></i>
+            </div>
+
             <div class="slide-bar-content">
                 <div class="slide-ba">
                     <h1>Level up your style with our</h1>
