@@ -46,6 +46,10 @@
     z-index: 2;
 }
 
+#menubar{
+    display: none;
+}
+
 .side-navbar {
     height: 100%;
     position: fixed;
@@ -128,7 +132,11 @@ li a:hover {
 }
 
 #slide-bar-container img{
-    width: 100vw;
+    width: 99vw;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 .slide-bar-content {
@@ -155,6 +163,8 @@ li a:hover {
 .slide-ba button {
     padding-top: 0;
     padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .brands {
@@ -170,7 +180,9 @@ li a:hover {
     display: flex;
     flex-direction: row;
     padding-top: 15px;
-    gap: 100px;
+    gap: 110px;
+    flex-wrap: wrap;
+    padding-left: 10px;
 }
 
 .brands-data {
@@ -178,10 +190,12 @@ li a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .brands-data img {
     z-index: 0;
+    width: 5vw !important;
 }
 
 .brands-data p {
@@ -432,10 +446,10 @@ footer b {
 
 .social-media {
     padding-top: 15px;
-    padding-left: 40px;
+    padding-left: 4vw;
     display: flex;
     gap: 75px;
-    padding-bottom: 20px;
+    padding-bottom: 2vw;
 }
 
 .social-media i {
@@ -468,6 +482,110 @@ footer b {
 
     .faa i:active .delete-tag{
         display: none;
+    }
+
+    #menubar{
+        display: inline-block;
+    }
+
+    .list ul{
+        display: none;
+    }
+
+    .brands-container {
+        gap: 35px !important;
+    }
+
+    #i{
+        font-size: 45px !important;
+        position: absolute;
+        top: 150px !important;
+        left: 50px !important;
+    }
+
+    #ei{
+        font-size: 45px !important;
+        position: absolute;
+        top: 150px !important;
+        right: 50px !important;
+    }
+
+    .slide-ba h5{
+        font-size: 3vw;
+        padding-bottom: 10px;
+    }
+
+    .slide-ba button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .brands{
+        padding-top: 20px;
+    }
+
+    .experiences-head{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .head h2{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .para p{
+        font-size: 8px;
+    }
+
+    .service-container-2 div h4{
+        font-size: 1vw;
+    }
+
+    .service-container-2 div p{
+        font-size: 1vw;
+    }
+
+    .new-arrivals-data button{
+        font-size: 1vw;
+        padding: 5px;
+        border-radius: 20px;
+        top: 55px;
+        left: 25px;
+    }
+
+    .imagepng{
+        width: 20px !important;
+    }
+
+    .image img{
+        width: 56vw !important;
+    }
+
+    .limited-offer-content{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .limited-offer-content button{
+        font-size: 5px !important;
+        padding: 2px !important;
+        position: absolute;
+        bottom: -20px;
+    }
+
+    .news-letter button{
+        font-size: 1.5vw;
+    }
+
+    .news-letter input{
+        padding-top: 20px;
+        padding-left: 2vw !important;
+        gap: -10vw !important;
     }
 
 }
